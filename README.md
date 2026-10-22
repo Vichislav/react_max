@@ -1,16 +1,33 @@
-# React + Vite
+# GREEN-API Messenger — тестовое задание
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Пользовательский интерфейс для отправки и получения текстовых сообщений
+через [GREEN-API](https://green-api.com/). Внешний вид вдохновлён
+[web.max.ru](https://web.max.ru/).
 
-Currently, two official plugins are available:
+## Стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 18 (Create React App)
+- Tailwind CSS
+- Fetch API (без сторонних HTTP-клиентов)
+- Long polling для получения входящих сообщений
 
-## React Compiler
+## Требования
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18+ и npm 9+
+- Аккаунт GREEN-API с созданным инстансом
+  (нужны `idInstance` и `apiTokenInstance`)
 
-## Expanding the ESLint configuration
+## Локальный запуск
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Клонируйте репозиторий:
+
+   git clone git@github.com:Vichislav/react_max.git
+   cd <папка-проекта>
+
+2. Установите зависимоти:
+
+   npm install
+
+3. Запустите dev-сервер:
+
+    npm run dev
