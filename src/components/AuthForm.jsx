@@ -1,4 +1,4 @@
-// src/components/AuthForm.jsx
+
 import { useState } from 'react';
 
 /**

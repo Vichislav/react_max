@@ -89,6 +89,14 @@ export async function receiveNotification({
     method: 'GET',
   });
 
+  console.log(`[GREEN-API] receiveNotification status: ${response.status}`);
+
+  if (response.status === 408) {
+    // Это штатный таймаут long polling — сообщений просто нет
+    return null;
+  }
+  
+
   if (!response.ok) {
     const errorText = await response.text();
     throw new Error(
